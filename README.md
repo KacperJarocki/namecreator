@@ -5,12 +5,11 @@
 ## Docs
 
 <!-- BEGIN_TF_DOCS -->
-
 ## Requirements
 
-| Name                                                               | Version |
-| ------------------------------------------------------------------ | ------- |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement_azurerm) | 4.1.0   |
+| Name | Version |
+|------|---------|
+| <a name="requirement_random"></a> [random](#requirement\_random) | 3.7.2 |
 
 ## Modules
 
@@ -18,19 +17,17 @@ No modules.
 
 ## Resources
 
-| Name                                                                                                                              | Type     |
-| --------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| [azurerm_resource_group.example](https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/resource_group)   | resource |
-| [azurerm_virtual_network.example](https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/virtual_network) | resource |
+No resources.
 
 ## Inputs
 
-| Name                                                   | Description | Type     | Default  | Required |
-| ------------------------------------------------------ | ----------- | -------- | -------- | :------: |
-| <a name="input_example"></a> [example](#input_example) | n/a         | `string` | `"name"` |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_name_components"></a> [name\_components](#input\_name\_components) | n/a | <pre>object({<br/>    project_name = string<br/>    environment  = string<br/>    service      = string<br/>    postfix      = optional(number, 0)<br/>  })</pre> | n/a | yes |
 
 ## Outputs
 
-No outputs.
-
+| Name | Description |
+|------|-------------|
+| <a name="output_name"></a> [name](#output\_name) | n/a |
 <!-- END_TF_DOCS -->
